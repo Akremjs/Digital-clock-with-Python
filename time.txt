@@ -1,0 +1,33 @@
+Pour utiliser strftime, vous devez d'abord importer le module datetime et créer un objet datetime. Ensuite, vous pouvez appeler la méthode strftime sur cet objet en passant le format souhaité en argument.
+
+Exemple de base
+python
+Copier le code
+from datetime import datetime
+
+# Crée un objet datetime pour la date et l'heure actuelles
+now = datetime.now()
+
+# Formater la date et l'heure en chaîne de caractères
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_date)  # Par exemple: 2024-07-25 14:30:45
+Spécificateurs de format courants
+Voici quelques spécificateurs de format couramment utilisés avec strftime :
+
+%Y : Année avec siècle (ex. : 2024)
+%y : Année sur deux chiffres (ex. : 24)
+%m : Mois sur deux chiffres (01 à 12)
+%d : Jour du mois sur deux chiffres (01 à 31)
+%H : Heure sur 24 heures (00 à 23)
+%I : Heure sur 12 heures (01 à 12)
+%p : AM ou PM
+%M : Minutes sur deux chiffres (00 à 59)
+%S : Secondes sur deux chiffres (00 à 59)
+%f : Microsecondes sur six chiffres (000000 à 999999)
+%A : Nom complet du jour de la semaine (ex. : Monday)
+%a : Nom abrégé du jour de la semaine (ex. : Mon)
+%B : Nom complet du mois (ex. : January)
+%b : Nom abrégé du mois (ex. : Jan)
+%c : Représentation locale de la date et de l'heure (ex. : Tue Jul 25 14:30:45 2024)
+%x : Représentation locale de la date (ex. : 07/25/24)
+%X : Représentation locale de l'heure (ex. : 14:30:45)

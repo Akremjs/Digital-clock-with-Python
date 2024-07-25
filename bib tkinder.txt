@@ -1,0 +1,23 @@
+Tkinter est une bibliothèque standard de Python utilisée pour créer des interfaces graphiques (GUI). Elle est incluse avec Python, ce qui la rend facilement accessible sans installation supplémentaire. Tkinter fournit une série de widgets tels que des boutons, des étiquettes, des champs de texte, et bien plus encore, qui peuvent être utilisés pour construire des applications GUI.
+
+
+
+import tkinter as tk
+
+def on_button_click():
+    print("Button clicked!")
+
+# Create the main window
+root = tk.Tk()
+root.title("Simple Tkinter App")
+
+# Create a label widget
+label = tk.Label(root, text="Hello, Tkinter!")
+label.pack(pady=10)
+
+# Create a button widget
+button = tk.Button(root, text="Click Me", command=on_button_click)
+button.pack(pady=10)
+
+# Run the application
+root.mainloop()
